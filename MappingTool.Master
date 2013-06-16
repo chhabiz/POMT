@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MappingTool.master.cs"
+    Inherits="WebApplication1.MappingTool" EnableTheming="true" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="Style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/georgia.js"></script>
+    <script type="text/javascript" src="js/cuf_run.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+    <!-- CuFon ends -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManagerMain" runat="server">
+    </asp:ScriptManager>
+    <telerik:RadFormDecorator ID="FormDecorator1" runat="server" DecoratedControls="All" ControlsToSkip="Select"
+        Skin="Windows7" />
+    <div class="main">
+        <div class="header">
+            <div id="menuheader">
+                <ul>
+                    <asp:ContentPlaceHolder ID="activeLink" runat="server">
+                        <li class="active"><a href="../../index.aspx"><span>Home</span></a></li>
+                        <li><a href="../../about.aspx"><span>About Us</span></a></li>
+                        <% 
+                            try
+                            {
+                                if (Session["CMT_User"] != null)
+                                {
+                                    Response.Write("<li><a href=\"../../logout.aspx\"><span>Log Out</span></a></li>");
+                                    Response.Write("<li><a href=\"../../UserDoc.aspx\" target=\"_blank\"><span>User Manual</span></a></li>");
+                                }
+                                else
+                                {
+                                    Response.Write("<li><a href=\"../../login.aspx\"><span>Login</span></a></li>");
+                                }
+                            }
+                            catch (Exception)
+                            {
+                                Response.Write("<li><a href=\"../../login.aspx\"><span>Login</span></a></li>");
+                            }
+                                
+                        %>
+                    </asp:ContentPlaceHolder>
+                </ul>
+            </div>
+            <div class="header_resize">
+                <div class="logo">
+                    <a href="http://www.rmit.edu.au"><h1>
+                        
+                    </h1></a>
+                </div>
+                <%--<div class="menu_nav">
+                </div>--%>
+                <div class="clr">
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="fbg">
+            <div class="fbg_resize">
+                <div class="col c1">
+                    <p id="heading">About</p>
+                    <p>
+                        Program Outcome Mapping Tool is an online tool (Website) which contains and allows aggregation of course
+                        and unit learning outcomes, aspects of assessment tasks, learning experiences and resources
+                    </p>
+                    <div class="clr">
+                    </div>
+                </div>
+                <div class="clr">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_resize">
+                <p class="lf">
+                    &copy; Copyright <a href="http://www.rmit.edu.au">RMIT</a>. Designed by <a href="#">
+                        yoursoft 1250-03</a></p>
+                <ul class="fmenu">
+                    <li class="active"><a href="index.aspx">Home</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
+                    <%--<li><a href="login.aspx"><span>Login</span></a></li>--%>
+                </ul>
+                <div class="clr">
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

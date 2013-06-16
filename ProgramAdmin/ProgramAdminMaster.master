@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MappingTool.Master" AutoEventWireup="true"
+    CodeBehind="ProgramAdminMaster.master.cs" Inherits="CurriculumMapping.ProgramAdmin.ProgramAdminMaster" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="progadminhead" runat="server">
+    </asp:ContentPlaceHolder>
+ <%--<script type="text/javascript">
+            button.set_autoPostBack(false);
+        }
+    </script>--%>
+    <script type="text/javascript">
+    <!--
+        function printPartOfPage(button, args) {
+            document.getElementById("reportcontent").style.visibility = 'visible';
+            var printContent = document.getElementById('reportcontent');
+            var windowUrl = 'about:blank';
+            var windowName = 'Print' + new Date().getTime();
+            var printWindow = window.open(windowUrl, windowName, 'left=50,top=50,width=1000,height=700');
+
+            printWindow.document.write(printContent.innerHTML);
+            //printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+            //printWindow.close();
+        }
+    // -->
+    </script>
+    <style type="text/css">
+        /*
+        All common (screen) styles here, in the normal way.
+        */
+        @media print
+        {
+          * { display: none; }/* Hide everything ... */
+          #reportcontent { display: block; }/* ... except the required div */
+        }
+     </style>
+</asp:Content>
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="activeLink" runat="server">
+    <li><a href="../index.aspx"><span>Home</span></a></li>
+    <li><a href="../about.aspx"><span>About Us</span></a></li>
+    <li><a href="../login.aspx"><span>Login</span></a></li>
+</asp:Content>
+--%><asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
+                <div class="submb">
+                    <div class="article">
+                        <div class="sidebar">
+                            <ul class="nav">
+                                <li><a href="ProgramAdminHome.aspx">Program Manager Home<img src="../images/Home-Button.png" alt="Program Manager Home" width="30px" height="30px" /></a></li>
+                                <br />
+                                <li id="listcategory">Features</li>
+                                <li><a href="CreateAccounts.aspx">Create Accounts</a></li>
+                                <li><a href="ManageAccounts.aspx">Manage Accounts</a></li>
+                                <li><a href="CreateOffering.aspx">Create Course Offering</a></li>
+                                <li><a href="ManageOffering.aspx">Manage Course Offering</a></li>
+                                <br />
+                                <li id="listcategory">Form Review</li>
+                                <li><a href="MyPendingForms.aspx">My Forms</a></li>
+                                <br />
+                                <li id="listcategory">Interim Report</li>
+                                <li><a href="GenerateReport.aspx">Generate Report</a></li>
+                            </ul>
+                        </div>
+                        <asp:ContentPlaceHolder ID="ContentMainArea" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="clr">
+                    </div>
+                </div>
+            </div>
+            <div class="clr">
+            </div>
+        </div>
+    </div>
+</asp:Content>

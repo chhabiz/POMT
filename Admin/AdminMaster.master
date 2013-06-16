@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MappingTool.Master" AutoEventWireup="true"
+    CodeBehind="AdminMaster.master.cs" Inherits="CurriculumMapping.Admin.AdminMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="adminhead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="activeLink" runat="server">
+    <li><a href="../index.aspx"><span>Home</span></a></li>
+    <li><a href="../about.aspx"><span>About Us</span></a></li>
+    <li><a href="../login.aspx"><span>Login</span></a></li>
+</asp:Content>--%>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
+                <div class="submb">
+                    <div class="article">
+                        <div class="sidebar">
+                            <ul class="nav">
+                                <li><a href="AdminHome.aspx">Admin Home<img src="../images/Home-Button.png" alt="Admin Home" width="30px" height="30px" /></a></li>
+                                <br />
+                                <li id="listcategory">Features</li>
+                                <li><a href="CreateAccounts.aspx">Create Accounts</a></li>
+                                <li><a href="ManageAccounts.aspx">Manage Accounts</a></li>
+                                <li><a href="CreateSchool.aspx">Create School</a></li>
+                                <li><a href="ManageSchool.aspx">Manage School</a></li>
+                                <li><a href="CreateProgram.aspx">Create Program</a></li>
+                                <li><a href="ManageProgram.aspx">Manage Program</a></li>
+                                <li><a href="AssignProgramAdmin.aspx">Assign Program Manager</a></li>
+                                <li><a href="CreateCourse.aspx">Create Course</a></li>
+                                <li><a href="ManageCourse.aspx">Manage Course</a></li>
+                                <li><a href="AssignProgramCourse.aspx">Assign Course to Program</a></li>
+                                <br />
+                                <br />
+                                <li id="listcategory">Register Attributes</li>
+                                <li><a href="CreatePAC.aspx">Create PAC Group</a></li>
+                                <li><a href="ManagePAC.aspx">Manage PAC</a></li>
+                                <li><a href="ManageULOOption.aspx">Course Learning Outcomes</a></li>
+                                <li><a href="ManageProgramSpecifics.aspx">Program Specific CLOs</a></li>
+                                <li><a href="ManageAssesmentTaskOption.aspx">Assessment Task</a></li>
+                                <li><a href="ManageLearningExperienceOption.aspx">Learning Experience</a></li>
+                                <li><a href="ManageCurriculumThemesOption.aspx">Triple-I Curriculum Themes</a></li>
+                                <li><a href="ManageLearningResourcesOption.aspx">Learning Resource</a></li>
+                                <li><a href="ManageABCDOption.aspx">ABCD</a></li>
+                                <li><a href="ManageAQFOption.aspx">AQF</a></li>
+                            </ul>                            
+                        </div>
+                        <asp:ContentPlaceHolder ID="ContentMainArea" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="clr">
+                    </div>
+                </div>
+            </div>
+            <div class="clr">
+            </div>
+        </div>
+    </div>
+</asp:Content>

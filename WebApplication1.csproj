@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B68AE72B-B6CF-46B4-9A07-8CFB467D6E52}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CurriculumMapping</RootNamespace>
+    <AssemblyName>CurriculumMapping</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DropDownCheckBoxes, Version=1.1.0.27408, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Common\DropDownCheckBoxes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2012.1.411.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2012 SP1\Bin40\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2012 SP1\Bin40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2012 SP1\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\AssignProgramAdmin.aspx" />
+    <Content Include="Admin\AssignProgramCourse.aspx" />
+    <Content Include="Admin\ManageAQFOption.aspx" />
+    <Content Include="Admin\CreatePAC.aspx" />
+    <Content Include="Admin\ManagePAC.aspx" />
+    <Content Include="Admin\CreateProgram.aspx" />
+    <Content Include="Admin\ManageABCDOption.aspx" />
+    <Content Include="Admin\ManageAccounts.aspx" />
+    <Content Include="Admin\ManageAssesmentTaskOption.aspx" />
+    <Content Include="Admin\ManageCourse.aspx" />
+    <Content Include="Admin\ManageCurriculumThemesOption.aspx" />
+    <Content Include="Admin\ManageLearningExperienceOption.aspx" />
+    <Content Include="Admin\ManageLearningResourcesOption.aspx" />
+    <Content Include="Admin\ManageProgram.aspx" />
+    <Content Include="Admin\CreateAccounts.aspx" />
+    <Content Include="Admin\CreateCourse.aspx" />
+    <Content Include="Admin\CreateSchool.aspx" />
+    <Content Include="Admin\ManageProgramSpecifics.aspx" />
+    <Content Include="Admin\ManageSchool.aspx" />
+    <Content Include="Admin\ManageULOOption.aspx" />
+    <Content Include="bin\DropDownCheckBoxes.dll" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="images\3tone.png" />
+    <Content Include="images\gradimage2.png" />
+    <Content Include="images\header_bg.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mainbar_bg.png" />
+    <Content Include="images\menu_a.png" />
+    <Content Include="images\userpic.gif" />
+    <Content Include="images\white.jpg" />
+    <Content Include="InactiveUser.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\cuf_run.js" />
+    <Content Include="js\georgia.js" />
+    <Content Include="js\jquery.mousewheel.min.js" />
+    <Content Include="LecturerStaff\FormCompleted.aspx" />
+    <Content Include="LecturerStaff\GenerateNewForm.aspx" />
+    <Content Include="LecturerStaff\LecturerStaffHome.aspx" />
+    <Content Include="LecturerStaff\ViewForm.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="ProgramAdmin\CreateAccounts.aspx" />
+    <Content Include="ProgramAdmin\CreateOffering.aspx" />
+    <Content Include="ProgramAdmin\FormApproved.aspx" />
+    <Content Include="ProgramAdmin\FormCompleted.aspx" />
+    <Content Include="ProgramAdmin\FormRejected.aspx" />
+    <Content Include="ProgramAdmin\GenerateNewForm.aspx" />
+    <Content Include="ProgramAdmin\GenerateReport.aspx" />
+    <Content Include="ProgramAdmin\ManageAccounts.aspx" />
+    <Content Include="ProgramAdmin\ManageOffering.aspx" />
+    <Content Include="ProgramAdmin\MyPendingForms.aspx" />
+    <Content Include="LecturerStaff\MyPendingForms.aspx" />
+    <Content Include="ProgramAdmin\ProgramAdminHome.aspx" />
+    <Content Include="ProgramAdmin\ViewForm.aspx" />
+    <Content Include="Style\style.css" />
+    <Content Include="SuperAdmin\AssignAdmin.aspx" />
+    <Content Include="SuperAdmin\CreateAdmin.aspx" />
+    <Content Include="SuperAdmin\CreateArchive.aspx" />
+    <Content Include="SuperAdmin\CreateCollege.aspx" />
+    <Content Include="SuperAdmin\GenerateReport.aspx" />
+    <Content Include="SuperAdmin\ListAdmins.aspx" />
+    <Content Include="SuperAdmin\ListColleges.aspx" />
+    <Content Include="SuperAdmin\SuperAdminHome.aspx" />
+    <Content Include="UnassignedAdmin.aspx" />
+    <Content Include="UnauthorizedPage.aspx" />
+    <Content Include="UserControls\CustomLinks.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.master.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.master.designer.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AssignProgramAdmin.aspx.cs">
+      <DependentUpon>AssignProgramAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AssignProgramAdmin.aspx.designer.cs">
+      <DependentUpon>AssignProgramAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AssignProgramCourse.aspx.cs">
+      <DependentUpon>AssignProgramCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AssignProgramCourse.aspx.designer.cs">
+      <DependentUpon>AssignProgramCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageAQFOption.aspx.cs">
+      <DependentUpon>ManageAQFOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageAQFOption.aspx.designer.cs">
+      <DependentUpon>ManageAQFOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreatePAC.aspx.cs">
+      <DependentUpon>CreatePAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreatePAC.aspx.designer.cs">
+      <DependentUpon>CreatePAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagePAC.aspx.cs">
+      <DependentUpon>ManagePAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagePAC.aspx.designer.cs">
+      <DependentUpon>ManagePAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreateProgram.aspx.cs">
+      <DependentUpon>CreateProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateProgram.aspx.designer.cs">
+      <DependentUpon>CreateProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageABCDOption.aspx.cs">
+      <DependentUpon>ManageABCDOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageABCDOption.aspx.designer.cs">
+      <DependentUpon>ManageABCDOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageAccounts.aspx.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageAccounts.aspx.designer.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageAssesmentTaskOption.aspx.cs">
+      <DependentUpon>ManageAssesmentTaskOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageAssesmentTaskOption.aspx.designer.cs">
+      <DependentUpon>ManageAssesmentTaskOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCourse.aspx.cs">
+      <DependentUpon>ManageCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCourse.aspx.designer.cs">
+      <DependentUpon>ManageCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCurriculumThemesOption.aspx.cs">
+      <DependentUpon>ManageCurriculumThemesOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCurriculumThemesOption.aspx.designer.cs">
+      <DependentUpon>ManageCurriculumThemesOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageLearningExperienceOption.aspx.cs">
+      <DependentUpon>ManageLearningExperienceOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageLearningExperienceOption.aspx.designer.cs">
+      <DependentUpon>ManageLearningExperienceOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageLearningResourcesOption.aspx.cs">
+      <DependentUpon>ManageLearningResourcesOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageLearningResourcesOption.aspx.designer.cs">
+      <DependentUpon>ManageLearningResourcesOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProgram.aspx.cs">
+      <DependentUpon>ManageProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProgram.aspx.designer.cs">
+      <DependentUpon>ManageProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProgramSpecifics.aspx.cs">
+      <DependentUpon>ManageProgramSpecifics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProgramSpecifics.aspx.designer.cs">
+      <DependentUpon>ManageProgramSpecifics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageULOOption.aspx.cs">
+      <DependentUpon>ManageULOOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageULOOption.aspx.designer.cs">
+      <DependentUpon>ManageULOOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CMT_classes\Administrator.cs" />
+    <Compile Include="App_Code\CMT_classes\College.cs" />
+    <Compile Include="App_Code\CMT_classes\BarChartReport.cs" />
+    <Compile Include="App_Code\CMT_classes\FormData.cs" />
+    <Compile Include="App_Code\CMT_classes\Snapshot.cs" />
+    <Compile Include="App_Code\CMT_classes\ReportData.cs" />
+    <Compile Include="App_Code\CMT_classes\Course.cs" />
+    <Compile Include="App_Code\CMT_classes\CourseAttributeOptionMapping.cs" />
+    <Compile Include="App_Code\CMT_classes\CourseOffering.cs" />
+    <Compile Include="App_Code\CMT_classes\Designation.cs" />
+    <Compile Include="App_Code\CMT_classes\Driver.cs" />
+    <Compile Include="App_Code\CMT_classes\MyForm.cs" />
+    <Compile Include="App_Code\CMT_classes\FormStatus.cs" />
+    <Compile Include="App_Code\CMT_classes\Group.cs" />
+    <Compile Include="App_Code\CMT_classes\Lecturer.cs" />
+    <Compile Include="App_Code\CMT_classes\Program.cs" />
+    <Compile Include="App_Code\CMT_classes\ProgramManager.cs" />
+    <Compile Include="App_Code\CMT_classes\Report.cs" />
+    <Compile Include="App_Code\CMT_classes\School.cs" />
+    <Compile Include="App_Code\CMT_classes\SpecificationAttribute.cs" />
+    <Compile Include="App_Code\CMT_classes\SpecificationAttributeOption.cs" />
+    <Compile Include="App_Code\CMT_classes\SpecificationAttributeOptionKeyValue.cs" />
+    <Compile Include="App_Code\CMT_classes\Staff.cs" />
+    <Compile Include="Admin\CreateAccounts.aspx.cs">
+      <DependentUpon>CreateAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateAccounts.aspx.designer.cs">
+      <DependentUpon>CreateAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreateCourse.aspx.cs">
+      <DependentUpon>CreateCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateCourse.aspx.designer.cs">
+      <DependentUpon>CreateCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreateSchool.aspx.cs">
+      <DependentUpon>CreateSchool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateSchool.aspx.designer.cs">
+      <DependentUpon>CreateSchool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSchool.aspx.cs">
+      <DependentUpon>ManageSchool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSchool.aspx.designer.cs">
+      <DependentUpon>ManageSchool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InactiveUser.aspx.cs">
+      <DependentUpon>InactiveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InactiveUser.aspx.designer.cs">
+      <DependentUpon>InactiveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\FormCompleted.aspx.cs">
+      <DependentUpon>FormCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\FormCompleted.aspx.designer.cs">
+      <DependentUpon>FormCompleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\GenerateNewForm.aspx.cs">
+      <DependentUpon>GenerateNewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\GenerateNewForm.aspx.designer.cs">
+      <DependentUpon>GenerateNewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\LecturerStaffHome.aspx.cs">
+      <DependentUpon>LecturerStaffHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\LecturerStaffHome.aspx.designer.cs">
+      <DependentUpon>LecturerStaffHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\ViewForm.aspx.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\ViewForm.aspx.designer.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\CreateAccounts.aspx.cs">
+      <DependentUpon>CreateAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\CreateAccounts.aspx.designer.cs">
+      <DependentUpon>CreateAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\CreateOffering.aspx.cs">
+      <DependentUpon>CreateOffering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\CreateOffering.aspx.designer.cs">
+      <DependentUpon>CreateOffering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormApproved.aspx.cs">
+      <DependentUpon>FormApproved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormApproved.aspx.designer.cs">
+      <DependentUpon>FormApproved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormCompleted.aspx.cs">
+      <DependentUpon>FormCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormCompleted.aspx.designer.cs">
+      <DependentUpon>FormCompleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormRejected.aspx.cs">
+      <DependentUpon>FormRejected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\FormRejected.aspx.designer.cs">
+      <DependentUpon>FormRejected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\GenerateNewForm.aspx.cs">
+      <DependentUpon>GenerateNewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\GenerateNewForm.aspx.designer.cs">
+      <DependentUpon>GenerateNewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\GenerateReport.aspx.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\GenerateReport.aspx.designer.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\ManageAccounts.aspx.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\ManageAccounts.aspx.designer.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\ManageOffering.aspx.cs">
+      <DependentUpon>ManageOffering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\ManageOffering.aspx.designer.cs">
+      <DependentUpon>ManageOffering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\MyPendingForms.aspx.cs">
+      <DependentUpon>MyPendingForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\MyPendingForms.aspx.designer.cs">
+      <DependentUpon>MyPendingForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\ProgramAdminHome.aspx.cs">
+      <DependentUpon>ProgramAdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\ProgramAdminHome.aspx.designer.cs">
+      <DependentUpon>ProgramAdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\ProgramAdminMaster.master.cs">
+      <DependentUpon>ProgramAdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\ProgramAdminMaster.master.designer.cs">
+      <DependentUpon>ProgramAdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\LecturerMaster.master.cs">
+      <DependentUpon>LecturerMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\LecturerMaster.master.designer.cs">
+      <DependentUpon>LecturerMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerStaff\MyPendingForms.aspx.cs">
+      <DependentUpon>MyPendingForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerStaff\MyPendingForms.aspx.designer.cs">
+      <DependentUpon>MyPendingForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramAdmin\ViewForm.aspx.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramAdmin\ViewForm.aspx.designer.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\AssignAdmin.aspx.cs">
+      <DependentUpon>AssignAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\AssignAdmin.aspx.designer.cs">
+      <DependentUpon>AssignAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateAdmin.aspx.cs">
+      <DependentUpon>CreateAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateAdmin.aspx.designer.cs">
+      <DependentUpon>CreateAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateArchive.aspx.cs">
+      <DependentUpon>CreateArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateArchive.aspx.designer.cs">
+      <DependentUpon>CreateArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateCollege.aspx.cs">
+      <DependentUpon>CreateCollege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\CreateCollege.aspx.designer.cs">
+      <DependentUpon>CreateCollege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\GenerateReport.aspx.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\GenerateReport.aspx.designer.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ListAdmins.aspx.cs">
+      <DependentUpon>ListAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ListAdmins.aspx.designer.cs">
+      <DependentUpon>ListAdmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ListColleges.aspx.cs">
+      <DependentUpon>ListColleges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ListColleges.aspx.designer.cs">
+      <DependentUpon>ListColleges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnassignedAdmin.aspx.cs">
+      <DependentUpon>UnassignedAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnassignedAdmin.aspx.designer.cs">
+      <DependentUpon>UnassignedAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnauthorizedPage.aspx.cs">
+      <DependentUpon>UnauthorizedPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnauthorizedPage.aspx.designer.cs">
+      <DependentUpon>UnauthorizedPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomLinks.ascx.cs">
+      <DependentUpon>CustomLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomLinks.ascx.designer.cs">
+      <DependentUpon>CustomLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CMT_classes\SuperAdministrator.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MappingTool.Master.cs">
+      <DependentUpon>MappingTool.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MappingTool.Master.designer.cs">
+      <DependentUpon>MappingTool.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperAdmin\SuperAdmin.master.cs">
+      <DependentUpon>SuperAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\SuperAdmin.master.designer.cs">
+      <DependentUpon>SuperAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\SuperAdminHome.aspx.cs">
+      <DependentUpon>SuperAdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\SuperAdminHome.aspx.designer.cs">
+      <DependentUpon>SuperAdminHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MappingTool.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SuperAdmin\SuperAdmin.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\CMT\Controls.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminMaster.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProgramAdmin\ProgramAdminMaster.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LecturerStaff\LecturerMaster.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30051</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

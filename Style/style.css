@@ -1,0 +1,762 @@
+/*
+Design by Capability Mapping Tool
+*/
+body
+{
+	margin:0;
+	padding:0;
+	width:100%;
+	color:Black;
+	font:normal 12px/1.8em Calibri, Arial Unicode MS, Helvetica, sans-serif;
+}
+
+html, .main
+{
+	padding:0;
+	margin:0;
+	/*background-color:#fff;  RMIT branding DCDCDC*/
+	background-color: #DCDCDC;
+}
+
+h4
+{
+	font-family: Calibri;
+	font-size: 12px;
+}
+
+.clr
+{
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0px;
+	line-height:0px;
+}
+
+h1
+{
+	margin:0;
+	padding:64px 40px;
+	color:#000;
+	font:normal 32px/1.2em Calibri, Arial Unicode MS, Helvetica, sans-serif;
+}
+
+h1 a, h1 a:hover
+{
+	color:#000;
+	text-decoration:none;
+}
+
+h2
+{
+	font-family: Century Gothic;
+	font-size: 14px;
+	font-weight: lighter;
+	padding:8px 0;
+	margin:8px 0;
+	text-transform: uppercase;
+}
+
+p
+{
+	margin:8px 0;
+	padding:0 0 8px 0;
+	font:normal 12px/1.8em Calibri, Arial Unicode MS, Helvetica, sans-serif;
+}
+
+a
+{
+	/*color:black; RMIT branding #EE3224*/
+	color: #EE3224;
+	text-decoration:underline;
+}
+
+
+.header, .hbg, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar
+{
+	margin:0; padding:0;
+}
+
+.content_resize, .fbg_resize, .footer_resize
+{
+	margin:0 auto;
+	padding:0 40px;
+	width:890px;
+}
+
+.fbg, .footer
+{
+	padding:16px 0;
+}
+
+/* header */
+.header
+{
+	/* This is the old banner, changed to RMIT branding now
+	background:url(../images/header_bg.jpg) repeat-x top;*/
+	background: url(../images/RMIT_banner_text2.png) no-repeat center bottom;
+}
+
+.header_resize
+{
+	margin:0 auto;
+	padding:0;
+	width:960px;
+	height:119px;
+}
+
+.header #menuheader
+{
+	background-color: #DCDCDC;
+	height: 40px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header .logo
+{
+	width:317px;
+	height:180px;
+	float:left;	
+	/*background:url(../images/logo.png) no-repeat left top;*/
+}
+
+#menuheader ul
+{
+	float: right;
+}
+
+#menuheader ul li
+{
+	height: 40px;
+	float:left;
+	width: 100px;
+}
+
+#menuheader ul li a
+{
+	color: White;
+	display: block;
+	text-decoration: none;
+}
+
+/* menu */
+
+#menuheader ul
+{
+	width: auto;
+	list-style:none;
+}
+
+#menuheader ul li a
+{
+	display:block;
+	/*padding:23px 9px 23px 0;*/
+	color:Gray;
+	text-decoration:none;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	border-left: 1px solid #EF7E75;
+	background-color: #F9F9F9;
+	height: 30px;
+}
+
+.menuheader ul li a span
+{
+	/*padding:23px;*/
+}
+
+#menuheader ul li a:hover, #menuheader ul li.active a
+{
+	/*background-color: #3B3B3B;*/
+	color: #Ef867E;
+	height: 30px;
+}
+
+.menuheader ul li a:hover span, .menuheader ul li.active a span
+{
+}
+
+/* content */
+.content
+{
+	padding-bottom:16px;
+}
+
+.content_resize
+{
+	padding:16px 40px 16px 0;
+	width:930px;
+}
+
+.content img
+{
+	padding:4px;
+	border:1px solid #bbb;
+}
+
+.content img.ilf
+{
+	margin-right:16px;
+	float:left;
+}
+
+.content .mainbar
+{
+	float:left;
+	width:960px;
+	/* 3D effect on the page*/
+	padding-right:15px;
+	margin-left: 6px;
+	margin-top: -50px;
+	background:url(../images/mainbar_bg.png) no-repeat right top;
+}
+
+.content .mainbar .submb
+{
+	padding:24px 23px 24px 40px;
+	/*background-color:#e8ebd8;* RMIT branding #F2F2F2 */
+	background-color: #F2F2F2;
+	 /*was 600*/
+	min-height: 600px;
+	border-radius: 0px;
+}
+	
+.content .mainbar .article, .content .sidebar .gadget
+{
+	margin:0;
+	padding:0 0 16px 0;
+}
+
+.content .sidebar
+{
+	/*float:right;
+	float: left;
+	display: block;
+	width:236px;
+	height: 45px;*/
+	width: 25%;
+	float: left;
+	min-height: 600px;
+	/*height: 600px;, check this height adjust for the sidbar, for different categories of users*/
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	/*background: -webkit-gradient
+           (linear, left top, left bottom, from(#ccc), to(#fff));*/
+}
+
+.content .maincontent
+{
+	width: 74%;
+	float: right;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	min-height: 600px;
+	border: 1px solid #DCDCDC;
+	/*height: 600px;, check this height adjust for the sidbar, for different categories of users*/
+}
+
+#textcontent
+{
+	margin-left: 40px;
+	color: #000;
+	margin-top: 28px;
+	width: 535px;
+	
+}
+
+/*#textcontent h4
+{
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #505050;
+}*/
+
+#textcontent p
+{
+}
+
+/* Spacing between form fields */
+#textcontent li
+{
+	height: 40px;
+	font-family: Calibri, Arial Unicode MS, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+	
+}
+
+ul.nav
+{
+	margin-top: 20px;
+}
+
+ul li
+{
+	text-align: justify;
+	/*margin-left: 40px;*/
+}
+
+#listcategory
+{
+	color: Black;
+	font-style: italic;
+	/*margin-left: 60px;*/
+	margin-bottom: 5px;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+ul li a
+{
+	color: Black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+ul li a:hover
+{
+	color: Gray;
+	text-decoration: underline;
+}
+
+ul.sb_menu, ul.ex_menu
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+ul.sb_menu li, ul.ex_menu li
+{
+	margin:0;
+}
+
+ul.sb_menu li
+{
+	padding:4px 0;
+}
+
+ul.ex_menu li
+{
+	padding:4px 0 8px;
+}
+
+ul.sb_menu li a, ul.ex_menu li a
+{
+	text-decoration:none;
+}
+
+ul.sb_menu li a:hover, ul.ex_menu li a:hover
+{
+	font-weight:bold;
+}
+
+ul.sb_menu li a:hover
+{
+	text-decoration:underline;
+}
+
+ul.ex_menu li a:hover
+{
+	text-decoration:none;
+}
+
+/*.sidebar ul li a
+{
+	text-decoration: none;
+}
+
+.sidebar ul li a:hover
+{
+	text-decoration: underline;
+	color: Gray;
+}
+*/
+
+.sidebar ul li
+{
+	list-style: none;
+}
+
+/* subpages */
+.content .mainbar .comment
+{
+	margin:0;
+	padding:16px 0 0 0;
+}
+
+.content .mainbar .comment img.userpic
+{
+	border:1px solid #dedede;
+	margin:10px 16px 0 0;
+	padding:0;
+	float:left;
+}
+
+/* fbg */
+.fbg
+{
+	/* bottom pane, above the footer, background color */
+	/*background-color:#8ec948; RMIT branding DCDCDC*/
+	background-color: #DCDCDC;
+	color:#000;
+}
+
+.fbg a, .fbg h2
+{
+	color:#000;
+}
+
+.fbg img
+{
+	border:1px solid #fff;
+}
+
+.fbg .col
+{
+	margin:0;
+	float:left;
+}
+
+.fbg .c1
+{
+	padding:0 16px 0 0;
+	width:890px;
+}
+
+.fbg .c2
+{
+	padding:0 16px;
+	width:286px;
+}
+
+.fbg .c3
+{
+	padding:0 0 0 16px;
+	width:250px;
+}
+
+.fbg .c1 img, .fbg .c3 img
+{
+	margin:4px;
+}
+.fbg .c1 img
+{
+	margin:8px 16px 4px 0;
+	padding:0;
+	float:left;
+}
+
+.fbg ul li a
+{
+	color:#fff;
+}
+
+/* footer */
+.footer
+{
+	background-color:#F2F2F2;
+	color: #797979;
+}
+
+.footer p.lf
+{
+	margin:0;
+	padding:4px 0;
+	float:left;
+	width:auto;
+	line-height:1.5em;
+}
+
+ul.fmenu
+{
+	margin:0;
+	padding:2px 0;
+	list-style:none;
+	float:right;
+	width:auto;
+}
+
+ul.fmenu li
+{
+	margin:0;
+	padding:0 4px;
+	float:left;
+	
+}
+
+ul.fmenu li a
+{
+	text-decoration:none;
+	padding:2px 6px;
+	color: Gray;
+	font-size: 12px;
+}
+
+ul.fmenu li a:hover, ul.fmenu li.active a
+{
+	color: Black;
+	background:none;
+}
+
+ul.fmenu li a:hover
+{
+	text-decoration:underline;
+}
+
+/* form */
+ol
+{
+	list-style:none;
+}
+
+ol li
+{
+	display:block; clear:both;
+}
+ol li label
+{
+	display:block;
+	margin:0;
+	padding:16px 0 0 0;
+}
+
+ol li input.text
+{
+	width:240px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:5px 2px;
+	height:16px;
+	background:#fff;
+}
+
+ol li textarea
+{
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:2px;
+	background:#fff;
+}
+
+ol li .send
+{
+	margin:16px 0 0 0;
+}
+
+#gradimage
+{
+	background:url(../images/1.png) no-repeat bottom;
+	width:427px;
+	height: 337px;
+	margin-left: 200px;
+}
+
+/* div for filer controls */
+
+#filterdiv
+{
+	border: 1px solid #DCDCDC;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+/* Rad Filter filter button */
+.rfApply a
+{
+	float: right;
+	clear: none;
+	margin-top: -60px;
+	height: 30px;
+}
+
+.article
+{
+	font-family: Calibri, Century Gothic, Arial, Sans-Serif;
+}
+
+#logout
+{
+	font: 18px Calibri;
+	font-variant: small-caps;
+	font-style: oblique;
+	text-align: center;
+}
+
+
+/* RadList Box */
+
+/* form data scrolling */
+#formdata
+{
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 600px;
+}
+
+.submb
+{
+	content: "";
+	display: block;
+	clear: both;
+	height: 100%;
+}
+
+/* div for the report */
+#reportcontent
+{
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+}
+
+#reportparams
+{
+	margin-left: 90px;
+	border: 1px;
+}
+
+.commentstab
+{
+	margin-left: 40px;
+}
+
+/*h2
+{
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: bold;
+	color: #567DB0;
+}*/
+
+.homedesc
+{
+	font-weight: bold;
+	font-family: Calibri;
+}
+
+h3
+{	
+	color: #567DB0;
+	border-bottom: 1px solid #567DB0;
+}
+
+#heading
+{
+	font: 20px Calibri;
+	font-variant: small-caps;
+	font-style: oblique;
+}
+
+#heading2
+{
+	font: 18px Calibri;
+	font-variant: small-caps;
+}
+
+#backbutton
+{
+	font: 18px Calibri;
+	font-variant: small-caps;
+	font-style: oblique;
+	text-align: left;
+}
+
+#backbutton img
+{
+	border: none;
+	vertical-align: top;
+}
+
+#coursetitle
+{
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Century Gothic;
+	text-decoration: underline;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+/* Logged in user */
+#currentuser
+{
+	text-align: right;
+	font-size: 12px;
+	color: Red;
+	font-family: Century Gothic;
+	padding-bottom: 0px;
+	margin-bottom: 2px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+#scrollright
+{
+	color: #567DB0;
+	background: url(../images/rigt_arrow.png) no-repeat center bottom;
+}
+
+#scrollright
+{
+	font: 18px Calibri;
+	font-variant: small-caps;
+	font-style: oblique;
+	text-align: center;
+}
+
+#scrollright img
+{
+	border: none;
+	vertical-align: top;
+}
+
+#formdata a
+{
+	color: #567DB0;
+	font-variant: small-caps;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.popupcontrol
+{
+	background-color: #567DB0;
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+}
+
+/* Added to limit dropdown box sizes to a fixed width on generatenewform.aspx */
+select
+{
+	width: 100px;
+}
+
+#login
+{
+	text-align: right;
+	color: #567DB0;
+	font-size: 16px;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.nav img
+{
+	border: none;
+}
